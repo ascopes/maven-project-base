@@ -6,9 +6,9 @@ updates:
       interval: "daily"
     assignees:
       - "ascopes"
-    labels:
-      - "ci"
-      - "housekeeping"
+    # labels:
+    #  - "maven"
+    #  - "housekeeping"
 
   - package-ecosystem: "maven"
     directory: "/"
@@ -16,6 +16,6 @@ updates:
       interval: "daily"
     assignees:
       - "ascopes"
-    labels:
-      - "maven"
-      - "housekeeping"
+    # labels:
+    #  - "maven"
+    #  - "housekeeping"
