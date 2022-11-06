@@ -132,4 +132,4 @@ jobs:
         if: always()
         continue-on-error: true
         with:
-          junit_files: "artifacts/**/TEST-*.xml"
+          junit_files: "**/target/surefire-reports/TEST-*.xml"
