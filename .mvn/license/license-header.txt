@@ -1,0 +1,4 @@
+${inceptionYear} - ${currentYear} <author>
+
+TODO: change this license header to the appropriate
+header for your project.
