@@ -6,9 +6,6 @@ updates:
       interval: "monthly"
     assignees:
       - "ascopes"
-    # labels:
-    #  - "maven"
-    #  - "housekeeping"
 
   - package-ecosystem: "maven"
     directory: "/"
@@ -16,6 +13,3 @@ updates:
       interval: "monthly"
     assignees:
       - "ascopes"
-    # labels:
-    #  - "maven"
-    #  - "housekeeping"
