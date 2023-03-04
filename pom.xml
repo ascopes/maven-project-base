@@ -204,15 +204,18 @@
 
         <configuration>
           <!-- Useful flags: https://mycila.carbou.me/license-maven-plugin/ -->
-          <header>.mvn/license/license-header.txt</header>
-
+          <licenseSets>
+            <licenseSet>
+              <header>.mvn/license/license-header.txt</header>
+              <includes>
+                <include>src/**/*.java</include>
+                <include>src/**/*.groovy</include>
+              </includes>
+            <licenseSet>
+          </licenseSets>
           <mapping>
             <java>SLASHSTAR_STYLE</java>
           </mapping>
-          <includes>
-            <include>src/**/*.java</include>
-            <include>src/**/*.groovy</include>
-          </includes>
           <properties>
             <currentYear>2022</currentYear>
             <inceptionYear>${project.inceptionYear}</inceptionYear>
