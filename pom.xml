@@ -124,9 +124,6 @@
           <version>${maven-compiler-plugin.version}</version>
 
           <configuration>
-            <compilerArgs>
-              <compilerArg>--module-version=${project.version}</compilerArg>
-            </compilerArgs>
             <failOnWarning>true</failOnWarning>
             <showDeprecation>true</showDeprecation>
             <release>19</release>
