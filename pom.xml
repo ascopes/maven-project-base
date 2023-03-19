@@ -207,7 +207,7 @@
                 <include>src/**/*.java</include>
                 <include>src/**/*.groovy</include>
               </includes>
-            <licenseSet>
+            </licenseSet>
           </licenseSets>
           <mapping>
             <java>SLASHSTAR_STYLE</java>
