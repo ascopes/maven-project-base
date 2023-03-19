@@ -9,7 +9,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <inceptionYear>2022</inceptionYear>
+  <inceptionYear>2023</inceptionYear>
 
   <licenses>
     <license>
@@ -31,7 +31,6 @@
     <junit.version>5.9.2</junit.version>
     <mockito.version>5.1.1</mockito.version>
     <slf4j.version>2.0.6</slf4j.version>
-
 
     <!-- Plugins -->
     <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
@@ -214,7 +213,7 @@
             <java>SLASHSTAR_STYLE</java>
           </mapping>
           <properties>
-            <currentYear>2022</currentYear>
+            <currentYear>2023</currentYear>
             <inceptionYear>${project.inceptionYear}</inceptionYear>
           </properties>
           <strictCheck>true</strictCheck>
