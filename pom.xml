@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>io.github.ascopes</groupId>
-  <artifactId>maven-project-base</artifactId>
+  <artifactId>maven-project-base-parent</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
@@ -14,9 +14,34 @@
   <licenses>
     <license>
       <name>TODO: license name here</name>
-      <url>${project.scm-url}/blob/main/LICENSE.txt</url>
+      <url>${project-scm-url}/blob/main/LICENSE.txt</url>
     </license>
   </licenses>
+
+  <developers />
+
+  <contributors />
+
+  <distributionManagement>
+    <repository>
+      <id>ossrh</id>
+      <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <issueManagement>
+    <system>GitHub Issues</system>
+    <url>${project-scm-url}/issues</url>
+  </issueManagement>
+
+  <organization>
+    <name>Ashley Scopes (GitHub)</name>
+    <url>${project.url}</url>
+  </organization>
 
   <scm>
     <url>scm:git:${project-scm-url}</url>
@@ -24,6 +49,10 @@
     <developerConnection>scm:git:${project-scm-url}</developerConnection>
     <tag>HEAD</tag>
   </scm>
+
+  <modules>
+    <module>your-module</module>
+  </modules>
 
   <properties>
     <!-- Dependencies -->
