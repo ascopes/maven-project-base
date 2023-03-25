@@ -93,7 +93,7 @@ jobs:
           ./codecov 
 
       - name: Publish unit test results
-        uses: EnricoMi/publish-unit-test-result-action@v2.5.0
+        uses: EnricoMi/publish-unit-test-result-action@v2.6.1
         if: always()
         continue-on-error: true
         with:
