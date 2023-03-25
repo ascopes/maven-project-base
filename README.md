@@ -11,11 +11,12 @@ do what you want with it and change the license for derived projects.
 - Implements Checkstyle (using Google code style by default; uses Checkstyle v10).
 - Implements license header enforcement.
 - Provides a basic build pipeline:
-    - Tests,
-    - Checkstyle and License enforcement,
-    - Dependabot,
-    - Provides initial config for Sonatype Lift,
-    - Provides initial config for Codecov.
+    - Tests;
+    - Checkstyle and License enforcement;
+    - Dependabot;
+    - Provides initial config for Sonatype Lift;
+    - Provides initial config for Codecov;
+    - CodeQL Analysis in CI.
 - Provides a default `.editorconfig` and `.gitignore`.
 - Implements Maven Wrapper.
 - Uses a visual test reporter for Surefire.
