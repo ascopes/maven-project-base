@@ -11,11 +11,12 @@ do what you want with it and change the license for derived projects.
 - Implements Checkstyle (using Google code style by default; uses Checkstyle v10).
 - Implements license header enforcement.
 - Provides a basic build pipeline:
-    - Tests,
-    - Checkstyle and License enforcement,
-    - Dependabot,
-    - Provides initial config for Sonatype Lift,
-    - Provides initial config for Codecov.
+    - Tests;
+    - Checkstyle and License enforcement;
+    - Dependabot;
+    - Provides initial config for Sonatype Lift;
+    - Provides initial config for Codecov;
+    - CodeQL Analysis in CI.
 - Provides a default `.editorconfig` and `.gitignore`.
 - Implements Maven Wrapper.
 - Uses a visual test reporter for Surefire.
@@ -33,9 +34,11 @@ do what you want with it and change the license for derived projects.
 5. Update `.mvn/license/license-header.txt` with the desired license header.
 6. Update the license name in the POM.
 7. Update the organisation and project URLs in the POM.
-8. Uncomment the CodeQL analysis step in `.github/workflows/build.yaml`. This is
-   commented out as it will currently fail without any actual code to scan.
-9. Update the labels and assignees in `.github/dependabot.yaml`
+8. Update the labels and assignees in `.github/dependabot.yaml`
+9. Update the `distributionManagement` block in the POM.
+10. Update the `developers` block in the POM.
+11. **Delete this README.md**.
+12. Remove the `your-module` placeholder module.
 
 Additionally, you may wish to:
 
@@ -44,8 +47,11 @@ Additionally, you may wish to:
 - If you do not need SLF4J/JUnit/AssertJ/Mockito, remove those dependencies.
 - Update .editorconfig appropriately for your project.
 - Update .gitconfig appropriately for your project.
+- Update the `contributors` block in the POM if appropriate. 
+- Adjust the `issueManagement` block in the POM if you are not using GitHub Issues.
 
 ## Stuff to do once you have pushed the first commit:
 
-- [Register the project with Sonatype Lift](https://lift.sonatype.com/)
-- [Register the project with Codecov](https://codecov.io/)
+- [Register the project with Sonatype Lift](https://lift.sonatype.com/), or delete the `.lift.toml` 
+  file.
+- [Register the project with Codecov](https://codecov.io/), or delete the `codecov.yml` file.
