@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3.4.0
+        uses: actions/checkout@v3.5.0
 
       - name: Initialize Java
         uses: actions/setup-java@v3.10.0
@@ -45,7 +45,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3.4.0
+        uses: actions/checkout@v3.5.0
         with:
           # Needed to keep actions working correctly.
           fetch-depth: 2
