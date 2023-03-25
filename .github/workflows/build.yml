@@ -20,7 +20,7 @@ jobs:
           cache: maven
           check-latest: true
           distribution: zulu
-          java-version: '19'
+          java-version: '17'
 
       - name: Run checks
         run: >-
@@ -56,7 +56,7 @@ jobs:
           cache: maven
           check-latest: true
           distribution: zulu
-          java-version: '19'
+          java-version: '17'
 
       - name: Compile and run tests
         run: >-

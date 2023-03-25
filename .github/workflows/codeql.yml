@@ -35,6 +35,14 @@ jobs:
         with:
           languages: ${{ matrix.language }}
 
+      - name: Initialize JDK
+        uses: actions/setup-java@v3.10.0
+        with:
+          cache: maven
+          check-latest: true
+          distribution: zulu
+          java-version: '17'
+
       - name: Autobuild
         uses: github/codeql-action/autobuild@v2
 

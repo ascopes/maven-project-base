@@ -154,7 +154,7 @@
           <configuration>
             <failOnWarning>true</failOnWarning>
             <showDeprecation>true</showDeprecation>
-            <release>19</release>
+            <release>17</release>
           </configuration>
         </plugin>
 
