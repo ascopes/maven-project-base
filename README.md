@@ -28,18 +28,18 @@ do what you want with it and change the license for derived projects.
 
 ## Stuff to do before you use this:
 
-1. Clone the repo.
-2. Change the group ID.
-3. Change the artifact ID.
-4. Replace the LICENSE.txt with your appropriate project license.
-5. Update `.mvn/license/license-header.txt` with the desired license header.
-6. Update the license name in the POM.
-7. Update the organisation and project URLs in the POM.
-8. Update the labels and assignees in `.github/dependabot.yaml`
-9. Update the `distributionManagement` block in the POM.
-10. Update the `developers` block in the POM.
-11. **Delete this README.md**.
-12. Remove the `your-module` placeholder module.
+1. [ ] Clone the repo.
+2. [ ] Change the group ID in the POM.
+3. [ ] Change the artifact ID.
+4. [ ] Replace the LICENSE.txt with your appropriate project license.
+5. [ ] Update `.mvn/license/license-header.txt` with the desired license header.
+6. [ ] Update the license name in the POM.
+7. [ ] Update the organisation and project URLs in the POM.
+8. [ ] Update the labels and assignees in `.github/dependabot.yaml`
+9. [ ] Update the `distributionManagement` block in the POM.
+10. [ ] Update the `developers` block in the POM.
+11. [ ] **Delete this README.md**.
+12. [ ] Remove the `your-module` placeholder module.
 
 Additionally, you may wish to:
 
