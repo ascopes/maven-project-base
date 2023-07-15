@@ -1,4 +1,0 @@
-build = "mvn"
-jdkVersion = "19"
-summaryComments = true
-ignore = []
