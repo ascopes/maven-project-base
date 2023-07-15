@@ -13,8 +13,6 @@ do what you want with it and change the license for derived projects.
 - Provides a basic build pipeline:
     - Tests;
     - Checkstyle and License enforcement;
-    - Dependabot;
-    - Provides initial config for Sonatype Lift;
     - Provides initial config for Codecov;
     - CodeQL Analysis in CI.
     - Dependabot Security Analysis in CI.
@@ -51,8 +49,6 @@ Additionally, you may wish to:
 - Update the `contributors` block in the POM if appropriate. 
 - Adjust the `issueManagement` block in the POM if you are not using GitHub Issues.
 
-## Stuff to do once you have pushed the first commit:
+## Stuff to do once you have pushed the first commit
 
-- [Register the project with Sonatype Lift](https://lift.sonatype.com/), or delete the `.lift.toml` 
-  file.
 - [Register the project with Codecov](https://codecov.io/), or delete the `codecov.yml` file.
