@@ -7,35 +7,8 @@ on:
     branches: [ main ]
 
 jobs:
-  lint:
-    name: Code style and licenses
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3.5.3
-
-      - name: Initialize Java
-        uses: actions/setup-java@v3.12.0
-        with:
-          cache: maven
-          check-latest: true
-          distribution: zulu
-          java-version: '17'
-
-      - name: Run checks
-        run: >-
-          ./mvnw -B -e -U
-          --no-transfer-progress
-          -DskipTests=true
-          -Dstyle.color=always
-          -Dmaven.main.skip
-          -Dmaven.jar.skip
-          -Dmaven.resources.skip
-          -Dmaven.test.skip
-          verify
-
-  test:
-    name: Run tests
+  build:
+    name: Build
     runs-on: ubuntu-latest
 
     # Enables adding a comment to PRs with test results.
@@ -56,16 +29,11 @@ jobs:
           cache: maven
           check-latest: true
           distribution: zulu
-          java-version: '17'
+          java-version: 17
 
       - name: Compile and run tests
-        run: >-
-          ./mvnw -B -e -U
-          --no-transfer-progress
-          '-Dcheckstyle.skip=true'
-          '-Dlicense.skip=true'
-          '-Dstyle.color=always'
-          clean verify
+        shell: bash
+        run: ./mvnw -B -e -U --no-transfer-progress -Dstyle.color=always clean verify
 
       - name: Archive Surefire and Jacoco reports
         uses: actions/upload-artifact@v3.1.2
@@ -81,6 +49,7 @@ jobs:
       - name: Publish to codecov
         continue-on-error: true
         if: always()
+        shell: bash
         run: |-
           curl --fail https://keybase.io/codecovsecurity/pgp_keys.asc \
               | gpg --no-default-keyring --keyring trustedkeys.gpg --import
