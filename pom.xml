@@ -9,6 +9,10 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
+  <modules|>
+    <module>your-module</module>
+  </modules>
+
   <inceptionYear>2023</inceptionYear>
 
   <licenses>
@@ -49,10 +53,6 @@
     <developerConnection>scm:git:${project-scm-url}</developerConnection>
     <tag>HEAD</tag>
   </scm>
-
-  <modules>
-    <module>your-module</module>
-  </modules>
 
   <properties>
     <!-- Dependencies -->
@@ -108,7 +108,7 @@
         <type>pom</type>
       </dependency>
 
-        <dependency>
+      <dependency>
         <!-- Logging interface -->
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
