@@ -128,7 +128,7 @@
 
           <executions>
             <execution>
-              <id>jacoco-unit-init</id>
+              <id>jacoco-init</id>
               <phase>initialize</phase>
               <goals>
                 <goal>prepare-agent</goal>
