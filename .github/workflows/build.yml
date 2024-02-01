@@ -46,7 +46,7 @@ jobs:
           retention-days: 5
 
       - name: Publish to codecov
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v4
         continue-on-error: true
         if: always()
         
