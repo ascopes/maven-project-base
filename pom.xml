@@ -56,7 +56,7 @@
 
   <properties>
     <!-- Dependencies -->
-    <assertj.version>3.25.2</assertj.version>
+    <assertj.version>3.25.3</assertj.version>
     <junit.version>5.10.2</junit.version>
     <mockito.version>5.11.0</mockito.version>
     <slf4j.version>2.0.12</slf4j.version>
