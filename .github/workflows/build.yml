@@ -49,10 +49,5 @@ jobs:
         uses: codecov/codecov-action@v4
         continue-on-error: true
         if: always()
-        
-      - name: Publish test results
-        uses: EnricoMi/publish-unit-test-result-action@v2
-        if: always()
-        continue-on-error: true
         with:
-          junit_files: "**/target/*-reports/TEST-*.xml"
+          token: ${{ secrets.CODECOV_TOKEN }}
